@@ -63,7 +63,6 @@ if uploaded_file is not None:
     X = data[fitur]
 
     # Standardisasi data
-    scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
 
     # ======================
