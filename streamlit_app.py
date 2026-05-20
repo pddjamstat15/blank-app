@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_score
+from sklearn.preprocessing import StandardScaler
 import plotly.express as px
+import folium
+from streamlit_folium import st_folium
 
 # ======================
 # JUDUL DASHBOARD
@@ -63,6 +68,7 @@ if uploaded_file is not None:
     X = data[fitur]
 
     # Standardisasi data
+    scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
 
     # ======================
