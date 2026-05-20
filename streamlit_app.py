@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from sklearn.metrics import silhouette_score
 from sklearn.preprocessing import StandardScaler
 import plotly.express as px
 import folium
