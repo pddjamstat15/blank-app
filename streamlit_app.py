@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
 import plotly.express as px
 import folium
 from streamlit_folium import st_folium
